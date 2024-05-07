@@ -3,6 +3,7 @@ import { ActiveTimer } from "./components/active-timer/ui/ActiveTimer";
 import { CrateTimer } from "./components/create-timer/ui/CreateTimer";
 import { TimeReportToday } from "./components/reports";
 import { AtDayReport } from "./components/reports/content/at-day";
+import { RangeReport } from "./components/reports/content/range/ui/RangeReport";
 import { TimersList } from "./components/timers-lits/ui/TimerList";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <CrateTimer />
           <TimeReportToday />
           <AtDayReport />
+          <RangeReport />
         </div>
         <ActiveTimer />
         <TimersList />
