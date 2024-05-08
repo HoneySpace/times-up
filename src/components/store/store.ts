@@ -157,7 +157,7 @@ function createStore(initialState: TStoreState) {
     notify();
   });
 
-  subscribe("timer-created", async (e) => {
+  subscribe("timer-created", async () => {
     currentState.allTimers = await getAllTimers(db);
     notify();
   });

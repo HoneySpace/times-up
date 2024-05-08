@@ -1,3 +1,4 @@
+import moment, { Duration } from "moment";
 import { FC, useEffect, useRef, useState } from "react";
 import {
   SystemEventsToArgs,
@@ -8,7 +9,6 @@ import {
   subscribe,
   unsubscribe,
 } from "../../store/store";
-import moment, { Duration, duration } from "moment";
 
 const getDuration = (marks: TimerTimeEntry[]) => {
   let running = false;
@@ -51,7 +51,7 @@ export const Timer: FC<{ timerId: TimerId }> = ({ timerId }) => {
   const [calculated, setCalculated] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
 
-  const timeoutRef = useRef<number>();
+  const timeoutRef = useRef<NodeJS.Timeout>();
   const runningRef = useRef(running);
   runningRef.current = running;
   const startAtRef = useRef(startAt);
