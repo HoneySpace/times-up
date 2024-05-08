@@ -8,4 +8,5 @@
 - [ ] Add search field
 - [ ] Make DayInfo more readable
 - [ ] Add mark functionality to DayInfo item, to visually separate 
-- [ ] 
+- [x] Add range report
+- [ ] Search bar
